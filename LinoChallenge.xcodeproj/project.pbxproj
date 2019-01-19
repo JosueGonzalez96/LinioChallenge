@@ -12,6 +12,7 @@
 		F2C624BE21F3D56A00A332B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C624BC21F3D56A00A332B3 /* Main.storyboard */; };
 		F2C624C021F3D59B00A332B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C624BF21F3D59B00A332B3 /* Assets.xcassets */; };
 		F2C624C321F3D59B00A332B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C624C121F3D59B00A332B3 /* LaunchScreen.storyboard */; };
+		F2C624CC21F3E6ED00A332B3 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C624CB21F3E6ED00A332B3 /* FavoritesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F2C624BF21F3D59B00A332B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2C624C221F3D59B00A332B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C624C421F3D59B00A332B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C624CB21F3E6ED00A332B3 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F2C624B721F3D56A00A332B3 /* LinoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F2C624CA21F3E6C100A332B3 /* FavoritesVC */,
 				F2C624B821F3D56A00A332B3 /* AppDelegate.swift */,
 				F2C624BA21F3D56A00A332B3 /* ViewController.swift */,
 				F2C624BC21F3D56A00A332B3 /* Main.storyboard */,
@@ -62,6 +65,78 @@
 				F2C624C421F3D59B00A332B3 /* Info.plist */,
 			);
 			path = LinoChallenge;
+			sourceTree = "<group>";
+		};
+		F2C624CA21F3E6C100A332B3 /* FavoritesVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2C624D421F3E88600A332B3 /* FavoritesVM */,
+				F2C624CD21F3E87200A332B3 /* FavoritesCells */,
+				F2C624CB21F3E6ED00A332B3 /* FavoritesVC.swift */,
+			);
+			path = FavoritesVC;
+			sourceTree = "<group>";
+		};
+		F2C624CD21F3E87200A332B3 /* FavoritesCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2C624CE21F3E87200A332B3 /* AllFavoritesCells */,
+				F2C624D121F3E87200A332B3 /* FavoritesCollectionsCells */,
+			);
+			path = FavoritesCells;
+			sourceTree = "<group>";
+		};
+		F2C624CE21F3E87200A332B3 /* AllFavoritesCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2C624CF21F3E87200A332B3 /* AllFavoritesCell */,
+				F2C624D021F3E87200A332B3 /* AllFavoritesVM */,
+			);
+			path = AllFavoritesCells;
+			sourceTree = "<group>";
+		};
+		F2C624CF21F3E87200A332B3 /* AllFavoritesCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AllFavoritesCell;
+			sourceTree = "<group>";
+		};
+		F2C624D021F3E87200A332B3 /* AllFavoritesVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AllFavoritesVM;
+			sourceTree = "<group>";
+		};
+		F2C624D121F3E87200A332B3 /* FavoritesCollectionsCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2C624D221F3E87200A332B3 /* FavoriteCollectionCellVM */,
+				F2C624D321F3E87200A332B3 /* FavoritesCollectionVM */,
+			);
+			path = FavoritesCollectionsCells;
+			sourceTree = "<group>";
+		};
+		F2C624D221F3E87200A332B3 /* FavoriteCollectionCellVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoriteCollectionCellVM;
+			sourceTree = "<group>";
+		};
+		F2C624D321F3E87200A332B3 /* FavoritesCollectionVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoritesCollectionVM;
+			sourceTree = "<group>";
+		};
+		F2C624D421F3E88600A332B3 /* FavoritesVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoritesVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +212,7 @@
 			files = (
 				F2C624BB21F3D56A00A332B3 /* ViewController.swift in Sources */,
 				F2C624B921F3D56A00A332B3 /* AppDelegate.swift in Sources */,
+				F2C624CC21F3E6ED00A332B3 /* FavoritesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
