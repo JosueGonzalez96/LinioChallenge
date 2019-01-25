@@ -9,10 +9,11 @@
 import UIKit
 
 class FavoritesVC: UIViewController {
+    @IBOutlet weak var collectionFavorites: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        FavoritesVM.init(controller: self)
         // Do any additional setup after loading the view.
     }
     
