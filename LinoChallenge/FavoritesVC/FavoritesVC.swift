@@ -10,10 +10,14 @@ import UIKit
 
 class FavoritesVC: UIViewController {
     @IBOutlet weak var collectionFavorites: UICollectionView!
-
+    var products = [Wishlist]()
+    var allProducts = [Product]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        FavoritesVM.init(controller: self)
+        let vm = FavoritesVM.init(controller: self)
+        vm.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -28,4 +32,12 @@ class FavoritesVC: UIViewController {
     }
     */
 
+}
+
+extension FavoritesVC: FavoritesVMP {
+    func updateWishlist(wishList: [Wishlist], allFavorites: [Product]) {
+        products = wishList
+        allProducts = allFavorites
+        self.collectionFavorites.reloadData()
+    }
 }
